@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1022
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AgRazor", "AgRazor\AgRazor.csproj", "{D4BDAE4C-DEB5-4641-8E95-783CA6DE1453}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ag.Data", "..\Data\Ag.Data.csproj", "{F6266940-0DAE-4894-A6FD-4625384D7C37}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ag.Domain", "..\Domain\Ag.Domain.csproj", "{B8A74198-8574-43E1-B69F-B2EE68461181}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D4BDAE4C-DEB5-4641-8E95-783CA6DE1453}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4BDAE4C-DEB5-4641-8E95-783CA6DE1453}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4BDAE4C-DEB5-4641-8E95-783CA6DE1453}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4BDAE4C-DEB5-4641-8E95-783CA6DE1453}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6266940-0DAE-4894-A6FD-4625384D7C37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6266940-0DAE-4894-A6FD-4625384D7C37}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6266940-0DAE-4894-A6FD-4625384D7C37}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6266940-0DAE-4894-A6FD-4625384D7C37}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8A74198-8574-43E1-B69F-B2EE68461181}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8A74198-8574-43E1-B69F-B2EE68461181}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8A74198-8574-43E1-B69F-B2EE68461181}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8A74198-8574-43E1-B69F-B2EE68461181}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BE4CA300-0B8E-4D67-9900-AD6678B6EA6D}
+	EndGlobalSection
+EndGlobal

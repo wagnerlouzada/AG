@@ -1,0 +1,55 @@
+﻿@using IdentityServerManager.UI.Helpers
+<div class="sidebar" data-background-color="black" data-active-color="warning">
+    <!--
+        Tip 1: you can change the color of the sidebar's background using: data-background-color="white | black"
+        Tip 2: you can change the color of the active button using the data-active-color="primary | info | success | warning | danger"
+    -->
+    <div class="sidebar-wrapper">
+        <div class="logo">
+            <a asp-area="" asp-controller="Home" asp-action="Index" class="simple-text">
+                AG API
+            </a>
+        </div>
+        <ul class="nav">
+
+            <li class="@Html.IsSelected(controller:"Home",action: "Index")">
+                <a asp-area="" asp-controller="Home" asp-action="Index">
+                    <i class="ti-panel"></i>
+                    <p>Home</p>
+                </a>
+            </li>
+            @*<li class="@Html.IsSelected(controller:"AgContent",action: "Index")">
+                <a asp-area="" asp-controller="api/AgContent/home" asp-action="Index">
+                    <i class="ti-panel"></i>
+                    <p>Ag</p>
+                </a>
+            </li>*@
+
+
+            @*@if (User.Identity.IsAuthenticated)
+            {
+                <li class="@Html.IsSelected(controller:"AgContent",action: "Index")">
+                    <a asp-area="" asp-controller="api/AgContent/home" asp-action="Index">
+                        <i class="ti-panel"></i>
+                        <p>Ag</p>
+                    </a>
+                </li>
+                <li role="presentation" class="active">
+                    <form method="post" asp-controller="Auth" asp-action="SignOut">
+                        <button type="submit" class="btn btn-primary">Sair</button>
+                    </form>
+                </li>
+            }
+            else
+            {
+                <li role="presentation" class="active"><a asp-controller="Auth" asp-action="SignIn">Entrar</a></li>
+            }*@
+
+
+
+
+        </ul>
+    </div>
+
+
+</div>

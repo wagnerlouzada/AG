@@ -1,0 +1,35 @@
+﻿@using Ag.Domain
+@model List<AgContentView>
+
+@{
+    ViewData["Title"] = "List";
+    //Layout = "List";
+}
+
+<h1>List</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>@item.Description</td>
+            <td>@item.ID</td>
+            <td>@item.KEY</td>
+
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.ID" class="btn btn-success btn-icon" data-toggle="tooltip" title="Editar"><i class="fa fa-pencil"></i></a>
+                <a href="javascript:void(0)" onclick="showDetails(@item.ID, 'ApiResources')" class="btn btn-primary btn-icon" data-toggle="tooltip" title="Detalhes"><i class="fa fa-bars"></i></a>
+                <a href="javascript:void(0)" onclick="deleteItem(@item.ID)" class="btn btn-danger btn-icon" data-toggle="tooltip" title="Excluir"><i class="fa fa-trash"></i></a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

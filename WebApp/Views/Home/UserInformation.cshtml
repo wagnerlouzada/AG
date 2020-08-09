@@ -1,0 +1,15 @@
+﻿<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<div class="starter-template">
+    <h1>Bem vindo @User.Identity.Name</h1>
+    <p class="lead">Lista de Direitos</p>
+    <ul>
+        @foreach (var claim in User.Claims)
+        {
+            <li>
+                <em>@claim.Type</em>: @claim.Value
+            </li>
+        }
+    </ul>
+</div>

@@ -1,0 +1,53 @@
+﻿<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar bar1"></span>
+                <span class="icon-bar bar2"></span>
+                <span class="icon-bar bar3"></span>
+            </button>
+            <a class="navbar-brand" href="#">@ViewData["Title"]</a>
+        </div>
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#">
+                        <i class="ti-settings"></i>
+                        <p>Settings</p>
+                    </a>
+                </li>
+
+
+                @if (User.Identity.IsAuthenticated)
+                    {
+                        <li class="@Html.IsSelected(controller:"AgContent",action: "Index")">
+                            <a asp-area="" asp-controller="api/AgContent/home" asp-action="Index">
+                                <i class="ti-panel"></i>
+                                <p>Ag</p>
+                            </a>
+                        </li>
+                        <li role="presentation" class="active">
+                            <form method="post" asp-controller="Auth" asp-action="SignOut">
+                                <button type="submit" class="btn btn-primary">Sair</button>
+                            </form>
+                        </li>
+                    }
+                    else
+                    {
+                        <li role="presentation" class="active"><a asp-controller="Auth" asp-action="SignIn">Entrar</a></li>
+                    }
+
+            </ul>
+
+
+
+
+
+
+        </div>
+
+
+
+    </div>
+</nav>

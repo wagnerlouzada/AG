@@ -1,0 +1,14 @@
+<h1>AG Data</h1>
+<p>Captura de conteudo AG..</p>
+<p *ngIf="!ags"><em>Carregando...</em></p>
+
+<table class='table' *ngIf="ags">
+    <thead>
+        <tr><th *ngFor="let col of headers">{{col}} </th></tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let obj of ags">
+            <td *ngFor="let col of headers">{{obj[col]}} </td>
+        </tr>
+    </tbody>
+</table>

@@ -1,0 +1,18 @@
+﻿@using Ag.Domain
+@model AgContent
+
+@{
+    ViewData["Title"] = "Editar Recurso de Api";
+}
+<div class="row">
+    <div class="col-md-12">
+        <form asp-action="Edit">
+            <input type="hidden" asp-for="ID" />
+            @Html.Partial("_formFields", Model)
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

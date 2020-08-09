@@ -1,0 +1,18 @@
+﻿{
+  "ConnectionStrings": {
+    "IdentitySqlServerConnection" "Server=(localdb)\\mssqllocaldb;Database=AGDATA;Trusted_Connection=True;MultipleActiveResultSets=true"
+  },
+  "Logging": {
+    "IncludeScopes": false,
+    "Debug": {
+      "LogLevel": {
+        "Default": "Warning"
+      }
+    },
+    "Console": {
+      "LogLevel": {
+        "Default": "Warning"
+      }
+    }
+  }
+}

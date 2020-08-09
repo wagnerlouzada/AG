@@ -1,0 +1,23 @@
+# .NET Core
+language: csharp
+mono: none
+dotnet: 3.0.100
+solution: NetCoreServer.sln
+
+# OS environment
+dist: bionic
+
+# Build matrix (OS, compiler)
+matrix:
+  include:
+    - name: "Linux"
+      os: linux
+    - name: "MacOS"
+      os: osx
+      osx_image: xcode11.3
+
+# Build scripts
+script:
+  - dotnet restore
+  - dotnet build
+  - dotnet test

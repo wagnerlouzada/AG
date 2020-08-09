@@ -1,0 +1,51 @@
+﻿@using Ag.Domain
+@model AgContentView
+
+<div class="card">
+    <div class="content">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <div class="form-group">
+            <div class="checkbox">
+                <label>
+                    <input asp-for="ID" /> @Html.DisplayNameFor(model => model.ID)
+                </label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label asp-for="Description" class="control-label"></label>
+                    <input asp-for="Description" class="form-control border-input" />
+                    <span asp-validation-for="Description" class="text-danger"></span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label asp-for="KEY" class="control-label"></label>
+                    <input asp-for="KEY" class="form-control border-input" />
+                    <span asp-validation-for="KEY" class="text-danger"></span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label asp-for="Alias" class="control-label"></label>
+                    <textarea asp-for="Alias" class="form-control border-input"></textarea>
+                    <span asp-validation-for="Alias" class="text-danger"></span>
+                </div>
+            </div>
+        </div>
+        <hr />
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group pull-right">
+                    <input type="submit" value="Save" class="btn btn-success" data-toggle="tooltip" title="Save" />
+                    <a asp-action="Index" class="btn btn-danger" data-toggle="tooltip" title="Cancel">Cancel</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

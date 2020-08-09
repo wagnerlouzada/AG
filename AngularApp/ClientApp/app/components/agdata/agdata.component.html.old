@@ -1,0 +1,20 @@
+<h1>AG Data</h1>
+
+<p>Captura de conteudo AG..</p>
+
+<p *ngIf="!ags"><em>Carregando...</em></p>
+
+<table class='table' *ngIf="ags">
+    <thead>
+        <tr>
+            <th>Description</th>
+            <th>KEY</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let ag of ags">
+            <td>{{ ag.Description }}</td>
+            <td>{{ ag.KEY }}</td>
+        </tr>
+    </tbody>
+</table>
